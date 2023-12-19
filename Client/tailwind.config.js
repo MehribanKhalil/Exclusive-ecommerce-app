@@ -6,7 +6,10 @@ export default {
     extend: {
       colors: {
         primary: "var(--primary)",
+        primary_dark:'var(--primary-dark)',
         secondary: "var(--secondary)",
+        green_color:"var(--green-color)",
+        green_dark:"var(--green-dark)"
       },
     },
   },

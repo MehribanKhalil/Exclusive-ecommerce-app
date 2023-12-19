@@ -1,0 +1,36 @@
+.swiper {
+  .swiper_compenents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+
+    .swiper-pagination {
+      position: relative;
+      height: 10px;
+    }
+
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      margin: 0 6px;
+      background-color: green;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 48px;
+      height: 32px;
+      background-color: green;
+      border-radius: 50%;
+      color: #fff;
+      position: relative;
+      margin: 0;
+
+      &::after {
+        font-size: 12px;
+        font-weight: 700;
+      }
+    }
+  }
+}

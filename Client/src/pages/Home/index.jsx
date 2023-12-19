@@ -2,16 +2,29 @@ import React from "react";
 import ContainerComponent from "../../components/CommonComponents/ContainerComponent";
 import HeaderCategory from "../../components/homePageComponents/HeaderComponent/HeaderCategory";
 import HeaderSlider from "../../components/homePageComponents/HeaderComponent/HeaderSlider";
+import Button from "../../components/CommonComponents/button";
+import SectionHeading from "../../components/CommonComponents/SectionHeading";
+import FlashSales from "../../components/homePageComponents/FlashSalesSection";
+import BrowseCategorySection from "../../components/homePageComponents/BrowseCategorySection";
+import BestSellingSection from "../../components/homePageComponents/BestSellingSection";
+import EnhanceYourMusic from "../../components/homePageComponents/EnhanceYourMusicSection";
+import OurProductsSection from "../../components/homePageComponents/OurProductsSection";
 
 const Home = () => {
   return (
-   <>
-    <h2>home</h2>
-    <div className="grid grid-cols-2">
-      <HeaderCategory/>
-      <HeaderSlider/>
+    <div className="wrapper">
+      <div className="grid grid-cols-4 gap-3">
+        <HeaderCategory />
+        <div className=" col-span-3 px-8 ">
+          <HeaderSlider />
+        </div>
+      </div>
+      <FlashSales/>
+      <BrowseCategorySection/>
+      <BestSellingSection/>
+      <EnhanceYourMusic/>
+      <OurProductsSection/>
     </div>
-   </>
   );
 };
 

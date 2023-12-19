@@ -1,24 +1,74 @@
-import React from 'react'
+import React, { useState } from "react";
+import Accardion from "./Accardion";
 
 const HeaderCategory = () => {
+  const category = [
+    {
+      name: "Woman’s Fashion",
+      accardionItems: [
+        { accardion_name: "women1" },
+        { accardion_name: "women2" },
+      ],
+    },
+    {
+      name: "Men's Fashion",
+      accardionItems: [
+        { accardion_name: "men1" },
+        { accardion_name: "men2" },
+        { accardion_name: "men3" },
+        { accardion_name: "men4" },
+      ],
+    },
+    {
+      name: "Electronics",
+    },
+    {
+      name: "Sports & Outdoor",
+    },
+    {
+      name: "Baby’s & Toys",
+    },
+    {
+      name: "Groceries & Pets",
+    },
+    {
+      name: "Health & Beauty",
+    },
+  ];
+
+  const [openAccordion, setOpenAccordion] = useState(null);
+
+  const handleAccordionClick = (index) => {
+    if (openAccordion === index) {
+      setOpenAccordion(null);
+    } else {
+      setOpenAccordion(index);
+    }
+  };
+
   return (
     <div>
-      <div className="">
-          <ul>
-            <li>Woman’s Fashion</li>
-            <li>Men’s Fashion</li>
-            <li>Electronics</li>
-            <li>Home & Lifestyle</li>
-            <li>Medicine</li>
-            <li>Electronics</li>
-            <li>Sports & Outdoor</li>
-            <li>Baby’s & Toys</li>
-            <li>Groceries & Pets</li>
-            <li>Health & Beauty</li>
-          </ul>
+      <div className=" py-12 pr-10 border-r-2 ">
+        <div className="space-y-3">
+          {category &&
+            category.map((item, i) => (
+              <div key={i}>
+                {item.accardionItems ? (
+                  <Accardion
+                    accardion={item}
+                    index={i}
+                    isOpen={openAccordion === i}
+                    onAccordionClick={() => handleAccordionClick(i)}
+                  />
+                ) : (
+                  <p>{item.name}</p>
+                )}
+              </div>
+            ))}
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HeaderCategory
+export default HeaderCategory;
