@@ -9,6 +9,7 @@ import BrowseCategorySection from "../../components/homePageComponents/BrowseCat
 import BestSellingSection from "../../components/homePageComponents/BestSellingSection";
 import EnhanceYourMusic from "../../components/homePageComponents/EnhanceYourMusicSection";
 import OurProductsSection from "../../components/homePageComponents/OurProductsSection";
+import OurBenefits from "../../components/homePageComponents/OurBenefits";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
       <BestSellingSection/>
       <EnhanceYourMusic/>
       <OurProductsSection/>
+      <OurBenefits/>
     </div>
   );
 };

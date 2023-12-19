@@ -29,7 +29,10 @@ const EnhanceYourMusic = () => {
         <Button btnText="Buy Now!" greenBtn />
       </div>
       <div className="center ">
-        <img src={JBL} alt="" className="max-w-[35.5rem]" />
+        <div className="blr">
+        </div>
+        <img src={JBL} alt="" className="max-w-[35.5rem] absolute z-20" />
+
       </div>
     </section>
   );

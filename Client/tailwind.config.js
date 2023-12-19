@@ -9,7 +9,8 @@ export default {
         primary_dark:'var(--primary-dark)',
         secondary: "var(--secondary)",
         green_color:"var(--green-color)",
-        green_dark:"var(--green-dark)"
+        green_dark:"var(--green-dark)",
+        gray_text:"var(--gray-text)"
       },
     },
   },

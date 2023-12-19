@@ -1,3 +1,8 @@
-.bg{
-    background: url('../../../assets/images/YourMusicImages/JBL.png'), lightgray -99.767px -240.854px / 135.847% 234.327% no-repeat;
+.blr {
+  border-radius: 504px;
+  opacity: 0.3;
+  background: #d9d9d9;
+  width: 504px;
+  height: 500px;
+  filter: blur(100px);
 }
