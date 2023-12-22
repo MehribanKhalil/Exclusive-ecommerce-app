@@ -26,34 +26,32 @@ const BestSellingSection = () => {
           slidesPerView={4}
           spaceBetween={30}
         >
-          
-
           <SwiperSlide>
-            <ProductCard />
+            <ProductCard rating />
           </SwiperSlide>
 
           <SwiperSlide>
-            <ProductCard />
+            <ProductCard rating />
           </SwiperSlide>
 
           <SwiperSlide>
-            <ProductCard />
+            <ProductCard rating />
           </SwiperSlide>
 
           <SwiperSlide>
-            <ProductCard />
+            <ProductCard rating />
           </SwiperSlide>
 
           <SwiperSlide>
-            <ProductCard />
+            <ProductCard rating />
           </SwiperSlide>
 
           <SwiperSlide>
-            <ProductCard />
+            <ProductCard rating />
           </SwiperSlide>
 
           <SwiperSlide>
-            <ProductCard />
+            <ProductCard rating />
           </SwiperSlide>
         </Swiper>
       </div>

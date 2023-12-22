@@ -26,31 +26,31 @@ const FlashSales = () => {
           
 
           <SwiperSlide>
-            <ProductCard />
+            <ProductCard rating />
           </SwiperSlide>
 
           <SwiperSlide>
-            <ProductCard />
+            <ProductCard rating />
           </SwiperSlide>
 
           <SwiperSlide>
-            <ProductCard />
+            <ProductCard rating />
           </SwiperSlide>
 
           <SwiperSlide>
-            <ProductCard />
+            <ProductCard rating />
           </SwiperSlide>
 
           <SwiperSlide>
-            <ProductCard />
+            <ProductCard rating />
           </SwiperSlide>
 
           <SwiperSlide>
-            <ProductCard />
+            <ProductCard rating />
           </SwiperSlide>
 
           <SwiperSlide>
-            <ProductCard />
+            <ProductCard rating />
           </SwiperSlide>
         </Swiper>
       </div>

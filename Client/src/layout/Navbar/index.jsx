@@ -44,10 +44,11 @@ const Navbar = () => {
               <GoHeart size={24} />
             </button>
           </NavLink>
-          <NavLink to={"/cart"} className="center">
+          <NavLink to={"/cart"} className="center relative">
             <button>
               <AiOutlineShoppingCart size={24} />
             </button>
+            <span className=" absolute -top-1 -right-2 bg-primary w-4 h-4 center text-white rounded-full text-sm">1</span>
           </NavLink>
           <button>
             <HiMiniBars3 className="lg:hidden" size={24} />
