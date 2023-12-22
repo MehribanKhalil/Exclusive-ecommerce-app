@@ -10,6 +10,7 @@ import BestSellingSection from "../../components/homePageComponents/BestSellingS
 import EnhanceYourMusic from "../../components/homePageComponents/EnhanceYourMusicSection";
 import OurProductsSection from "../../components/homePageComponents/OurProductsSection";
 import OurBenefits from "../../components/homePageComponents/OurBenefits";
+import NewArrival from "../../components/homePageComponents/NewArrivalSection";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <BestSellingSection/>
       <EnhanceYourMusic/>
       <OurProductsSection/>
+      <NewArrival/>
       <OurBenefits/>
     </div>
   );

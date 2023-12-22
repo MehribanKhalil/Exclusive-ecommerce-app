@@ -34,3 +34,7 @@
 .rounded_timer{
     @apply bg-white rounded-full text-black center flex-col w-[3.875rem] h-[3.875rem]
 }
+
+.custom_border{
+    @apply border border_radius border-slate-400
+}

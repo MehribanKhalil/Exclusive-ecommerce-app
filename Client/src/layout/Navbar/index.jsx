@@ -13,7 +13,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div id="navbar" className="relative">
+    <div id="navbar" className="sticky top-0 z-50 section_border">
       <div className="flex items-center justify-between pt-5 pb-3 wrapper">
         <div>
           <NavLink to={"/"}>
@@ -31,10 +31,10 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-3 lg:gap-5">
-          <div className="search_inp  sm:bg-gray">
+          <div className="search_inp  sm:bg-secondary">
             <input
               type="text"
-              className="bg-gray hidden sm:block "
+              className=" bg-secondary hidden sm:block "
               placeholder="What are you looking for?"
             />
             <IoSearch className="search_icon" size={24} />
