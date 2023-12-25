@@ -24,6 +24,24 @@ const BrowseCategorySection = () => {
           className="mySwiper"
           slidesPerView={6}
           spaceBetween={30}
+          breakpoints={{
+            300: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            568:{
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            768: {
+              slidesPerView: 4,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 6,
+              spaceBetween: 40,
+            },
+          }}
         >
           <SwiperSlide>
             <BrowseCategory image={Phones} title="Phones" />

@@ -3,9 +3,9 @@ import guarantee from "../../../assets/images/OurBenefitsImages/guarantee.svg";
 import delivery from "../../../assets/images/OurBenefitsImages/delivery.svg";
 import service from "../../../assets/images/OurBenefitsImages/service.svg";
 import BenefitCard from "./BenefitCard";
-const OurBenefits = () => {
+const OurBenefits = ({wrapper}) => {
   return (
-    <section className="grid grid-cols-1 gap-5  sm:grid-cols-2 lg:grid-cols-3  py-24 section_border">
+    <section className={`${wrapper && 'wrapper' } grid grid-cols-1 gap-5  sm:grid-cols-2 lg:grid-cols-3  py-24`}>
       <BenefitCard
         img={delivery}
         title="FREE AND FAST DELIVERY"

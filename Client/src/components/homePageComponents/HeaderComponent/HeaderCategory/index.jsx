@@ -48,7 +48,7 @@ const HeaderCategory = () => {
 
   return (
     <div>
-      <div className=" py-12 pr-10 border-r-2 ">
+      <div className="   p-10 lg:p-0 lg:py-12 lg:pr-10 lg:border-r-2 ">
         <div className="space-y-3">
           {category &&
             category.map((item, i) => (

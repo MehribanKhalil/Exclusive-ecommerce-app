@@ -4,7 +4,13 @@ import { IoTrashOutline } from "react-icons/io5";
 import { GoHeart } from "react-icons/go";
 import { FiEye } from "react-icons/fi";
 
-const ProductCard = ({ wishlistCard, recommendedCard, isNew, onSale,rating }) => {
+const ProductCard = ({
+  wishlistCard,
+  recommendedCard,
+  isNew,
+  onSale,
+  rating,
+}) => {
   return (
     <div>
       <div className=" relative">
@@ -54,9 +60,7 @@ const ProductCard = ({ wishlistCard, recommendedCard, isNew, onSale,rating }) =>
           <span className=" text-gray-400 line-through">$160</span>
         </div>
         <div>
-          {
-            rating ?
-            <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2">
             <span className="inline-flex  text-yellow-400">
               <MdStar />
               <MdStar />
@@ -66,9 +70,6 @@ const ProductCard = ({ wishlistCard, recommendedCard, isNew, onSale,rating }) =>
             </span>
             <span className="text-gray-400 text-[0.87rem]">(88)</span>
           </div>
-          :
-          ''
-          }
         </div>
       </div>
     </div>

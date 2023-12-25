@@ -1,0 +1,11 @@
+.sample-slider {
+  padding: 30px 0 50px;
+  .swiper-pagination-bullet {
+    background: rgb(56, 56, 56);
+  }
+  .swiper-pagination-bullet-active {
+    background: var(--primary);
+    transform: scale(1.2);
+    border: 1px solid var(--gray-text);
+  }
+}

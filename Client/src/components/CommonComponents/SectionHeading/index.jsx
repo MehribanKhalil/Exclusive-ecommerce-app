@@ -15,7 +15,7 @@ const SectionHeading = ({subTitle,title}) => {
         </svg>
         <p className=" text-primary font-semibold">{subTitle}</p>
       </div>
-      <h2 className="text-[2.1rem] font-semibold mt-2">{title}</h2>
+      <h2 className=" text-lg sm:text-[2.1rem] font-semibold mt-2">{title}</h2>
     </div>
   );
 };

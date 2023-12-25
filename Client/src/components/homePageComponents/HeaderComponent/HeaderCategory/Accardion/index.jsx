@@ -2,14 +2,6 @@ import React, { useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 const Accardion = ({ accardion, index, isOpen, onAccordionClick }) => {
-//     console.log(index);
-//   const [isOpen, setIsOpen] = useState(null);
-//   const handleClick = (index) => {
-//     if (isOpen===index) {
-//         return setIsOpen(null)
-//     } 
-//     setIsOpen(index)
-//   };
   return (
     <div>
       <>

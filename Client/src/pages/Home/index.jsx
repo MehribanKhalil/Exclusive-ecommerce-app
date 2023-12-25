@@ -15,9 +15,9 @@ import NewArrival from "../../components/homePageComponents/NewArrivalSection";
 const Home = () => {
   return (
     <div className="wrapper">
-      <div className="grid grid-cols-4 gap-3">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-3 ">
         <HeaderCategory />
-        <div className=" col-span-3 px-8 ">
+        <div className=" lg:col-span-3 px-8 ">
           <HeaderSlider />
         </div>
       </div>

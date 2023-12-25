@@ -16,12 +16,29 @@ const FlashSales = () => {
       <div className=" pt-8 pb-12">
         <Swiper
           loop={true}
-          navigation={true}
-          //   centeredSlides={true}
+          // navigation={true}
           modules={[Navigation]}
           className="mySwiper"
           slidesPerView={4}
           spaceBetween={30}
+          breakpoints={{
+            300: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            568:{
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 40,
+            },
+          }}
         >
           
 

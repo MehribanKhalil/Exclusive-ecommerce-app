@@ -1,0 +1,10 @@
+.header-slider{
+  .swiper-pagination-bullet {
+    background: #fff;
+  }
+  .swiper-pagination-bullet-active {
+    background: var(--primary);
+    transform: scale(1.2);
+    border: 1px solid #fff;
+  }
+}
